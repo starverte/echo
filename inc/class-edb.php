@@ -4,7 +4,7 @@
  *
  */
 
-require('../e-config.php');
+require('e-config.php');
 
 /**
  * edb class
@@ -28,13 +28,14 @@ class edb {
    *
    * @var object $conn PHP Data Object
    */
-  function connect( $dbuser = DB_USER, $dbpassword = DB_PASSWORD, $dbhost = DB_HOST ) {
+  function connect( $dbuser = DB_USER, $dbpassword = DB_PASSWORD, $dbhost = DB_HOST, $dbname = DB_NAME ) {
 
     $dbuser     = empty($dbuser)     ? $this->dbuser     : $dbuser;
     $dbpassword = empty($dbpassword) ? $this->dbpassword : $dbpassword;
     $dbhost     = empty($dbhost)     ? $this->dbhost     : $dbhost;
+    $dbname     = empty($dbname)     ? $this->dbname     : $dbname;
 
-    $conn = new PDO('mysql:host='.$dbhost, $dbuser, $dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $conn = new PDO('mysql:dbname='.$dbname.';host='.$dbhost, $dbuser, $dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
     return $conn;
   }
