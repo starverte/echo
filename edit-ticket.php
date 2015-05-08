@@ -4,7 +4,6 @@
  *
  * Allows a ticket to be edited
  *
- * @author  Crystal Carr
  * @since 0.1.0
  *
  * @todo Validate input fields

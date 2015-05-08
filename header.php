@@ -6,7 +6,6 @@
  * along with the header and navigation that is consistent
  * on all pages.
  *
- * @author Matt Beall
  * @since 0.1.0
  */
 session_start();
@@ -66,7 +65,7 @@ if (!empty($the_type)) {
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-c410">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-echo">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -76,7 +75,7 @@ if (!empty($the_type)) {
         </div><!-- .navbar-header -->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-c410">
+        <div class="collapse navbar-collapse navbar-echo">
           <ul id="menu-top" class="nav navbar-nav navbar-right">
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact Us</a></li>

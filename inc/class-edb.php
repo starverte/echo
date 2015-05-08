@@ -2,15 +2,15 @@
 /**
  * Defines edb class and related functions
  *
- * @author Matt Beall <me@rams.colostate.edu>
  */
+
+require('../e-config.php');
 
 /**
  * edb class
  *
  * Connects to database and creates object.
  *
- * @author Matt Beall
  * @since 0.0.1
  */
 class edb {
@@ -28,13 +28,13 @@ class edb {
    *
    * @var object $conn PHP Data Object
    */
-  function connect( $dbuser = 'cmh', $dbpassword = 'cbt', $dbhost = 'buscissql\cisweb' ) {
+  function connect( $dbuser = DB_USER, $dbpassword = DB_PASSWORD, $dbhost = DB_HOST ) {
 
     $dbuser     = empty($dbuser)     ? $this->dbuser     : $dbuser;
     $dbpassword = empty($dbpassword) ? $this->dbpassword : $dbpassword;
     $dbhost     = empty($dbhost)     ? $this->dbhost     : $dbhost;
 
-    $conn = new PDO('sqlsrv:Server='.$dbhost, $dbuser, $dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $conn = new PDO('mysql:host='.$dbhost, $dbuser, $dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
     return $conn;
   }

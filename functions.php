@@ -4,7 +4,6 @@
  *
  * All function definitions for the site
  *
- * @author Matt Beall
  */
 
 /**

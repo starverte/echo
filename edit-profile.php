@@ -4,7 +4,6 @@
  *
  * Allows a registered user to edit profile
  *
- * @author Hannah Turner
  * @since 0.1.1
  *
  * @todo Validate input fields

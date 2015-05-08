@@ -4,7 +4,6 @@
  *
  * Includes the common footer and closes the <body> and <html> tags
  *
- * @author Matt Beall
  * @since 0.0.1
  */
 ?>
@@ -13,11 +12,11 @@
   <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="site-info container">
       <div id="footer-left" class="col-lg-7 col-md-6 col-sm-5">
-        <p>&copy; 2014 c410echo.</p>
+        <p>&copy; 2015 Star Verte LLC.</p>
       </div>
       <div id ="credits" class="col-lg-5 col-md-6 col-sm-7">
         <p>
-          Developed by <a href="http://mattbeall.me">Matt Beall</a>, Crystal Carr, and Hannah Turner
+          Developed by <a href="http://starverte.com">Star Verte LLC</a>
         </p>
       </div>
     </div><!-- .site-info -->

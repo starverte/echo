@@ -2,7 +2,6 @@
 /**
  * Defines class E_Tag and related functions
  *
- * @author Matt Beall
  */
 
 /**
@@ -10,7 +9,6 @@
  *
  * Connects to database and creates tag object.
  *
- * @author Matt Beall
  * @since 0.0.4
  */
 class E_Tag {

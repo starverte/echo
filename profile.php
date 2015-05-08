@@ -6,7 +6,6 @@
  * If not logged in, or different user from current profile,
  * this page displays public information for a particular user.
  *
- * @author Hannah Turner
  * @since 0.1.0
  *
  * @todo Validate input fields

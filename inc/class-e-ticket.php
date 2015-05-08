@@ -2,7 +2,6 @@
 /**
  * Defines class E_Ticket and related functions
  *
- * @author Matt Beall
  *
  * @todo Incorporate ticket_tags and ticket_history tables
  */
@@ -12,7 +11,6 @@
  *
  * Connects to database and creates ticket object.
  *
- * @author Matt Beall
  * @since 0.0.7
  */
 class E_Ticket {

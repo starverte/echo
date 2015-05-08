@@ -4,7 +4,6 @@
  *
  * Displays contact information and includes basic contact form
  *
- * @author Crystal Carr
  * @since 0.0.1
  *
  * @todo Validate input fields
@@ -23,7 +22,7 @@ include_once ('header.php'); ?>
             </header><!-- .entry-header -->
 
             <div class="entry-content">
-              <p>Please report an issues you find on the Echo website to the development team at <a href="mailto:dev@starverte.com">Star Verte LLC.</a></p>
+              <p>Please report an issues you find on the Project Echo website to the development team at <a href="mailto:dev@starverte.com">Star Verte LLC.</a></p>
               <p>If you are need to submit a ticket regarding a software or hardware issue please create the ticket using the <a href="ticket.php">ticket form.</a></p>
               <p>To contact the webmasters for any other reasons please contact the Star Verte LLC <a href="mailto:dev@starverte.com">here.</a></p>
             </div> <!--.entry-content -->

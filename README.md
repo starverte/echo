@@ -1,19 +1,27 @@
-Echo (PHP) 0.1.1
+Project Echo 0.1.1
 ===
 
-The PHP code for the PHP version of the project
+Project Echo is a ticketing and client portal.
 
-### Contributing
-To contribute, do the following:
+```
+Project Echo is based on Echo-PHP https://github.com/c410echo/echo-php.git
+(C) 2014 Matt Beall, Crystal Carr, and Hannah Turner
+Licensed under the MIT License, http://opensource.org/licenses/MIT
+```
 
-1. Go to **_your_ fork** of echo-php, and click on the green "Pull Request" button.
-2. Make sure the **base fork is _your_ fork** and the **head fork is _c410echo/echo-php_**. Both should have the branch of "master".
-3. If you see "There isn't anything to compare.", skip to step 5.
-4. Create Pull Request and merge pull request. (The name doesn't matter.)
-5. On your local machine, sync.
-6. Make any desired changes to the code.
-7. Commit all changes.
-8. Sync changes from your local machine.
-8. Go to **_your_ fork** of echo-php, and click on the green "Pull Request" button.
-9. Make sure the **base fork is _c410echo/echo-php_ fork** and the **head fork is _your_ fork**. Your fork should be the "master" branch, but **make sure the c410echo/echo-php branch is _dev_**
-10. Create Pull Request, using a title and description which gives an overview of the changes you made. **Do NOT merge.**
+```
+Project Echo Copyright 2015 Star Verte LLC (email : dev@starverte.com)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+```
