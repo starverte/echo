@@ -133,7 +133,7 @@ class E_User {
     if ( ! $u_id )
       return false;
 
-    $_user = self::query("SELECT TOP 1 * FROM users LEFT JOIN registered_users ON u_id_PK = reg_u_id_PK_FK WHERE u_id_PK = $u_id");
+    $_user = self::query("SELECT * FROM users LEFT JOIN registered_users ON u_id_PK = reg_u_id_PK_FK WHERE u_id_PK = $u_id LIMIT 1");
 
     return new E_User ( $_user );
   }
@@ -288,7 +288,7 @@ class E_User {
    */
   private static function get_user_id( $u_ip ) {
     global $edb;
-    $users = self::query("SELECT TOP 1 * FROM users WHERE u_ip = '$u_ip' ORDER BY u_id_PK DESC");
+    $users = self::query("SELECT * FROM users WHERE u_ip = '$u_ip' ORDER BY u_id_PK DESC LIMIT 1");
     foreach ( $users as $user ) {
         get_class($user);
         foreach ( $user as $key => $value )
@@ -311,7 +311,7 @@ class E_User {
    */
   public static function authenticate_user( $u_login_name, $u_pass ) {
     global $edb;
-    $users = self::query("SELECT TOP 1 * FROM users JOIN registered_users ON u_id_PK = reg_u_id_PK_FK WHERE u_login_name = '$u_login_name' AND u_pass = '$u_pass' ORDER BY u_id_PK DESC");
+    $users = self::query("SELECT * FROM users JOIN registered_users ON u_id_PK = reg_u_id_PK_FK WHERE u_login_name = '$u_login_name' AND u_pass = '$u_pass' ORDER BY u_id_PK DESC LIMIT 1");
     foreach ( $users as $user ) {
         get_class($user);
         foreach ( $user as $key => $value )
